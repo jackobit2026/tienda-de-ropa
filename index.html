@@ -1,13 +1,174 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Venta de Ropa</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AURA Studio | Moda Contemporánea</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;1,400&display=swap" rel="stylesheet">
+  
+  <!-- Hoja de estilos externa -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Venta de Ropa</h1>
-    <p>Bienvenido a nuestra tienda de ropa!</p>
+
+  <!-- Barra de Anuncio Superior -->
+  <div class="announcement-bar">
+    <p>Envíos a todo el país • Nueva Colección Disponible</p>
+  </div>
+
+  <!-- Encabezado / Navegación (Responsive sin JS) -->
+  <header class="header">
+    <div class="header-container">
+      <a href="#" class="logo">AURA<span>.</span></a>
+      
+      <!-- Checkbox invisible para menú en móvil -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">
+      <label for="nav-toggle" class="hamburger-btn" aria-label="Abrir menú">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <nav class="nav-menu">
+        <a href="#inicio" class="nav-link">Inicio</a>
+        <a href="#coleccion" class="nav-link">Colección</a>
+        <a href="#acerca" class="nav-link">Nosotros</a>
+        <a href="https://wa.me/59170000000?text=Hola!%20Quisiera%20hacer%20una%20consulta" target="_blank" rel="noopener" class="btn-nav-wa">
+          Escríbenos
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Sección Hero / Portada -->
+  <section id="inicio" class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <span class="hero-badge">Temporada 2026</span>
+      <h1 class="hero-title">Elegancia minimalista para tu día a día</h1>
+      <p class="hero-subtitle">Prendas con cortes limpios, telas de alta caída y acabados sostenibles creados para perdurar.</p>
+      <div class="hero-actions">
+        <a href="#coleccion" class="btn-primary">Ver Catálogo</a>
+        <a href="https://wa.me/59170000000?text=Hola!%20Deseo%20más%20información%20del%20catálogo" target="_blank" rel="noopener" class="btn-secondary">
+          Atención por WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Catálogo de Productos -->
+  <section id="coleccion" class="catalog-section">
+    <div class="section-header">
+      <span class="section-tag">Selección Destacada</span>
+      <h2 class="section-title">Nuestra Colección</h2>
+      <p class="section-desc">Selecciona tu prenda favorita y consulta disponibilidad de tallas directamente.</p>
+    </div>
+
+    <div class="products-grid">
+      <!-- Producto 1 -->
+      <article class="product-card">
+        <div class="card-media">
+          <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?q=80&w=800&auto=format&fit=crop" alt="Blazer Oversize Camel" loading="lazy">
+          <span class="product-pill">Básico</span>
+        </div>
+        <div class="card-info">
+          <h3 class="product-name">Blazer Oversize Camel</h3>
+          <p class="product-fabric">100% Lino Texturizado</p>
+          <div class="card-footer">
+            <span class="product-price">$89.00</span>
+            <a href="https://wa.me/59170000000?text=Hola!%20Me%20interesa%20el%20Blazer%20Oversize%20Camel%20($89.00)" target="_blank" rel="noopener" class="btn-product-wa">
+              Pedir por WhatsApp
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Producto 2 -->
+      <article class="product-card">
+        <div class="card-media">
+          <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=800&auto=format&fit=crop" alt="Vestido Midi Siena" loading="lazy">
+          <span class="product-pill">Tendencia</span>
+        </div>
+        <div class="card-info">
+          <h3 class="product-name">Vestido Midi Siena</h3>
+          <p class="product-fabric">Algodón Orgánico Elástizado</p>
+          <div class="card-footer">
+            <span class="product-price">$74.00</span>
+            <a href="https://wa.me/59170000000?text=Hola!%20Me%20interesa%20el%20Vestido%20Midi%20Siena%20($74.00)" target="_blank" rel="noopener" class="btn-product-wa">
+              Pedir por WhatsApp
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Producto 3 -->
+      <article class="product-card">
+        <div class="card-media">
+          <img src="https://images.unsplash.com/photo-1576566588028-4147f3842f27?q=80&w=800&auto=format&fit=crop" alt="Sweater Cuello Tortuga" loading="lazy">
+          <span class="product-pill">Nuevo</span>
+        </div>
+        <div class="card-info">
+          <h3 class="product-name">Sweater Cuello Tortuga</h3>
+          <p class="product-fabric">Punto fino de cachemira y lana</p>
+          <div class="card-footer">
+            <span class="product-price">$62.00</span>
+            <a href="https://wa.me/59170000000?text=Hola!%20Me%20interesa%20el%20Sweater%20Cuello%20Tortuga%20($62.00)" target="_blank" rel="noopener" class="btn-product-wa">
+              Pedir por WhatsApp
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Producto 4 -->
+      <article class="product-card">
+        <div class="card-media">
+          <img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?q=80&w=800&auto=format&fit=crop" alt="Pantalón Palazzo Sand" loading="lazy">
+          <span class="product-pill">Exclusivo</span>
+        </div>
+        <div class="card-info">
+          <h3 class="product-name">Pantalón Palazzo Sand</h3>
+          <p class="product-fabric">Corte sastre fluido</p>
+          <div class="card-footer">
+            <span class="product-price">$58.00</span>
+            <a href="https://wa.me/59170000000?text=Hola!%20Me%20interesa%20el%20Pantal%C3%B3n%20Palazzo%20Sand%20($58.00)" target="_blank" rel="noopener" class="btn-product-wa">
+              Pedir por WhatsApp
+            </a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Sección de Contacto & Beneficios -->
+  <section id="acerca" class="contact-banner">
+    <div class="banner-inner">
+      <h2>¿Tienes dudas sobre tu talla o el ajuste?</h2>
+      <p>Nuestro equipo de estilistas te atiende de manera personalizada vía WhatsApp al instante.</p>
+      <a href="https://wa.me/59170000000?text=Hola!%20Necesito%20asesoramiento%20con%20las%20tallas" target="_blank" rel="noopener" class="btn-primary-large">
+        <svg class="wa-icon" viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+          <path d="M12.031 2C6.495 2 2 6.484 2 12.019c0 1.97.568 3.81 1.554 5.373L2 22l4.767-1.517A9.97 9.97 0 0012.031 22C17.567 22 22 17.516 22 12.019 22 6.484 17.567 2 12.031 2zm5.787 14.284c-.244.686-1.42 1.31-1.956 1.392-.51.077-1.168.109-3.738-.952-3.284-1.356-5.385-4.69-5.549-4.908-.164-.218-1.332-1.77-1.332-3.376 0-1.606.842-2.396 1.144-2.723.303-.327.662-.409.883-.409.22 0 .442.002.636.012.204.01.478-.078.747.569.28.673.957 2.333 1.042 2.506.085.174.143.378.028.607-.114.228-.172.37-.342.569-.17.199-.358.444-.512.597-.171.171-.35.358-.15.702.2.344.89 1.467 1.91 2.375 1.31 1.167 2.414 1.53 2.757 1.701.344.172.545.143.748-.09.204-.233.87-1.015 1.103-1.363.233-.348.467-.29.782-.174.316.116 2.004.945 2.348 1.116.344.172.573.257.658.4.086.143.086.83-.158 1.516z"/>
+        </svg>
+        Hablar con una Asesora
+      </a>
+    </div>
+  </section>
+
+  <!-- Pie de página -->
+  <footer class="footer">
+    <p>© 2026 AURA Studio. Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- Botón Flotante de WhatsApp con Efecto Radiante -->
+  <a href="https://wa.me/59170000000?text=Hola!%20Quisiera%20hacer%20un%20pedido" class="wa-floating-btn" target="_blank" rel="noopener" aria-label="WhatsApp">
+    <div class="pulse-ring"></div>
+    <svg viewBox="0 0 24 24" width="30" height="30" fill="#ffffff">
+      <path d="M12.031 2C6.495 2 2 6.484 2 12.019c0 1.97.568 3.81 1.554 5.373L2 22l4.767-1.517A9.97 9.97 0 0012.031 22C17.567 22 22 17.516 22 12.019 22 6.484 17.567 2 12.031 2zm5.787 14.284c-.244.686-1.42 1.31-1.956 1.392-.51.077-1.168.109-3.738-.952-3.284-1.356-5.385-4.69-5.549-4.908-.164-.218-1.332-1.77-1.332-3.376 0-1.606.842-2.396 1.144-2.723.303-.327.662-.409.883-.409.22 0 .442.002.636.012.204.01.478-.078.747.569.28.673.957 2.333 1.042 2.506.085.174.143.378.028.607-.114.228-.172.37-.342.569-.17.199-.358.444-.512.597-.171.171-.35.358-.15.702.2.344.89 1.467 1.91 2.375 1.31 1.167 2.414 1.53 2.757 1.701.344.172.545.143.748-.09.204-.233.87-1.015 1.103-1.363.233-.348.467-.29.782-.174.316.116 2.004.945 2.348 1.116.344.172.573.257.658.4.086.143.086.83-.158 1.516z"/>
+    </svg>
+  </a>
+
 </body>
 </html>
